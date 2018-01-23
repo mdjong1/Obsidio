@@ -22,7 +22,7 @@ public class Xebec extends Vessel {
     public void create() {
         try {
             setDefaultTexture();
-            this.shootSmoke = new TextureRegion(getContext().getTextures().getMisc("explode_big"));
+            this.shootSmoke = new TextureRegion(getContext().getTextures().getMisc("explode_medium"));
             shootSmoke.setRegion(0,0,40, 30);
         } catch (Exception e) {
             e.printStackTrace();
@@ -40,7 +40,7 @@ public class Xebec extends Vessel {
 
     @Override
     public CannonBall createCannon(GameContext ctx, Vessel source, Vector2 target) {
-        return new LargeCannonball(ctx, source, target, getContext().getTextures().getMisc("large_splash"),
+        return new MediumCannonball(ctx, source, target, getContext().getTextures().getMisc("small_splash"),
                 getContext().getTextures().getMisc("hit"));
     }
 
