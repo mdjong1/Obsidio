@@ -4,7 +4,7 @@ public class Constants {
 
     public static final String name = "Obsidio Beta v1.9.3";
 
-    public static final int VERSION = 7;
+    public static final int VERSION = 8;
 
     /**
      * The port the simulator is using
